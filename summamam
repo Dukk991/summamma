@@ -1,0 +1,25 @@
+/*
+5. Tee ohjelma, joka lukee käyttäjältä kokonaisluvun. Sitten ohjelma summaa tähän lukuun asti
+kaikkien parillisten lukujen arvot ja tulostaa summan näytölle. (HUOM luku%2 jakojäännös
+on nolla parillisilla luvuilla) (Jos käyttäjä syöttää luvun 8 niin ohjelma tulostaa luvun 20
+(0+2+4+6+8)
+*/
+
+#include <stdio.h>
+
+int main(){
+    
+    printf("\nAnna kokonaisnumero: \n");
+    int numeroC, summa = 0;
+    scanf("%d", &numeroC);
+    
+    for (int i = 0; i <= numeroC; i++) {
+        if (i%2 == 0) {
+            summa+= i;
+        }
+    }
+    
+    printf("\nSumma on %d\n", summa);
+    
+    return 0;
+}
